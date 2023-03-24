@@ -1,0 +1,76 @@
+/* The following code removes the margin all the border of the page  */
+body{
+    margin: 0px;
+}
+
+.container{
+    width: 90%;
+    margin: auto;
+}
+
+.glb-msg{
+    background-color: rgba(255, 0, 0, 0.731);
+    padding: 10px 0;
+    
+}
+
+.glb-msg > div {
+    display: flex;/*  brings contents in two div elements in same line  */
+    justify-content: space-between; /*  creates space in between welcome and the icons  */
+    color:white;
+}
+[href="https://facebook.com"]{
+    color: white;
+}
+[href="https://tiktok.com"]{
+    color: white;
+}
+[href="https://instagram.com"]{
+    color: white;
+}
+
+.nav-bar{
+    background-color: blue;
+    color: white;
+}
+.nav-bar > div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu {
+    display: flex;
+}
+
+ul.menu  {
+    list-style: none
+}
+
+.menu > li {
+    /* margin: 10px 5px 20px 5px; (we can also do this) */
+    margin-left: 1rem;
+}
+/* the followung line makes the items in list have a red background when we hover our mouse at them */
+.menu > li:hover{
+    background: red;
+    cursor: pointer;  /* if this is not used, the pointer is going to change into I sign when we hover to the content  */
+}
+
+/* hero section  */
+.hero{
+    background: url(./hero.jpg) center center no-repeat;
+    background-size: cover;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.welcome{
+    background: rgba(0, 0, 0, 0.447);
+    color: rgba(196, 155, 60, 0.699);
+    padding: 1rem 2rem;
+    border-radius: 10px; /*  this curves the corner of the black box  */
+}
+
