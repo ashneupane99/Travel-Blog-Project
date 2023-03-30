@@ -74,3 +74,128 @@ ul.menu  {
     border-radius: 10px; /*  this curves the corner of the black box  */
 }
 
+/* ===================main area================== */
+.main{
+    display: flex;
+    gap: 1rem; /*  this gives gap between all element in the container  */
+}
+.main-content{
+    width: 70%;
+}
+
+
+
+main  article {
+    display: flex;
+    border: 1px solid silver;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: -5px 5px 15px 5px rgba(128, 128, 128, 0.479);
+    margin-bottom: 2rem;
+}
+
+
+.art-img{
+    max-width: 200px;
+    margin-right: 20px;
+}
+.title{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.btn-container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.btn-container button{
+   
+    background: red;
+    border: none;
+    padding: 5px;
+}
+
+/* ==================aside section ===================== */
+.side-links{
+width: 30%;
+}
+
+.country{
+background: rgba(141, 222, 42, 0.282);
+padding: 1rem;
+border-radius: 5px;
+margin-bottom: 3rem;
+}
+
+.year{
+background: rgba(221, 150, 52, 0.565);
+padding: 1rem;
+border-radius: 5px;
+margin-bottom: 3rem;
+}
+
+/* recommendation section ======= */
+
+.recc {
+    background: rgba(0, 128, 0, 0.566);
+    padding: 4rem 0;
+}
+
+.card-list {
+margin-top: 4rem;
+display: flex;
+flex-wrap: wrap;
+gap: 2rem;
+justify-content: space-between;
+}
+
+.card {
+    width: 300px;
+    border-radius: 5px;
+   background: white;
+   box-shadow: -5px 10px 10px 5px rgba(0, 0, 0, 0.346);
+   /* overflow: hidden; this syntax will make the image border curve aswell but we use the syntax below*/
+   padding-bottom: 1rem;
+   flex-grow: 1;
+}
+.card img{
+border-radius: 5px 5px 0px 0px ;
+}
+.card button{
+    width: 100%;
+    padding: 10px 0;
+    background: rgba(237, 12, 12, 0.683);
+    border: none;
+    box-shadow: -5px;
+    border-radius: 10px;
+}
+
+
+
+/* =========================subscription section================== */
+.subscription{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+}
+form button{
+    padding: 0.3rem 1rem;
+    background: red;
+    border: none;
+    color: white
+
+}
+
+/* ===============footer============ */
+.footer{
+    min-height: 50px;
+    background: black;
+    color: white;
+    padding: 3rem;
+    margin-top: 2rem;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
