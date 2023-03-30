@@ -110,8 +110,7 @@ main  article {
 
 .btn-container button{
    
-    background: red;
-    border: none;
+   
     padding: 5px;
 }
 
@@ -164,8 +163,8 @@ border-radius: 5px 5px 0px 0px ;
 .card button{
     width: 100%;
     padding: 10px 0;
-    background: rgba(237, 12, 12, 0.683);
-    border: none;
+  
+ 
     box-shadow: -5px;
     border-radius: 10px;
 }
@@ -181,9 +180,7 @@ border-radius: 5px 5px 0px 0px ;
 }
 form button{
     padding: 0.3rem 1rem;
-    background: red;
-    border: none;
-    color: white
+    
 
 }
 
@@ -198,4 +195,12 @@ form button{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.btn {
+    background: rgba(255, 0, 0, 0.727);
+    border: none;
+    color: white;
+    padding: 0.3rem 1rem;
+
 }
