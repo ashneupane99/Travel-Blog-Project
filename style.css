@@ -1,3 +1,6 @@
+*{
+    box-sizing: border-box;
+}
 /* The following code removes the margin all the border of the page  */
 body{
     margin: 0px;
@@ -109,8 +112,6 @@ main  article {
 }
 
 .btn-container button{
-   
-   
     padding: 5px;
 }
 
@@ -178,10 +179,18 @@ border-radius: 5px 5px 0px 0px ;
     align-items: center;
     padding: 2rem;
 }
+.subscription form{
+    display: flex;
+            flex-direction: row;
+            gap: 1rem ;
+            justify-content: center; 
+            width: 100%; 
+        
+             
+}
+
 form button{
     padding: 0.3rem 1rem;
-    
-
 }
 
 /* ===============footer============ */
@@ -204,3 +213,98 @@ form button{
     padding: 0.3rem 1rem;
 
 }
+
+
+/* ======media query===== screen friendly codes. These codes will only implement of the criteria inside () fulfills. it is used to create various views such as desktop view, mobile view, tablets view etc. based on pixel resolution of the screen */ 
+@media (max-width: 1000px){
+ .glb-msg{
+    background-color:blue;
+} 
+.main{
+    display: flex; 
+    flex-direction: column;
+}
+.main-content{
+    width: 100%;
+}
+.side-links{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    }
+    .country{ 
+        width: 50%;
+        }
+        
+        .year{
+        width: 50%;
+        }
+        .subscription form{
+            display: flex;
+            flex-direction: row;
+            
+            gap: 1rem ;
+            justify-content: center; 
+            width: 100%; 
+           
+        }   
+        
+} 
+/* the following code will make ta global message bar dissapear if the resolution is less than 500px */
+@media (max-width: 768px){
+    .glb-msg{
+        display: none;
+    }
+    .main{
+        display: flex; 
+        flex-direction: column;
+    }
+    .main-content{
+        width: 100%;
+    }
+    main  article {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 2rem;
+    }
+    
+    
+    .art-img{
+        max-width: 100%;
+        margin-right: 20px;
+    }
+    .btn-container {
+        display: flex;
+        justify-content: flex-start;
+    }
+    
+    .side-links{
+        width: 100%;
+        display: flex;
+       flex-direction: column;
+
+        }
+        .side-links div{  
+            width: 100%;
+        }
+        .side-links div{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+     .subscription form{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            flex-grow: 1;
+            gap: 1rem ; 
+            
+        }
+
+       
+        
+       
+        
+        
+    } 
